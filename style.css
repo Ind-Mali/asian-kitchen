@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f8;
+  font-family: "Zilla Slab", serif;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #ff6a23;
+}
+.menu {
+  margin-top: 20px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.btn-item {
+  margin-left: 15px;
+}
+
+.photo {
+  width: 30%;
+  height: 175px;
+  object-fit: cover;
+  border: 0.25rem solid black;
+  border-radius: 10px;
+}
+.menu-items {
+  display: flex;
+  margin: 20px 0;
+}
+.menu-info {
+  margin-left: 20px;
+  width: 100%;
+}
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+h4 {
+  color: #e00a00;
+}
+
+.menu-text {
+  padding-top: 20px;
+}
+
+.cart-item-purchase{
+  position: absolute;
+  right: 30px;
+  background-color: rgb(88, 88, 87);
+  padding: 0 5px;
+  border-radius: 20%;
+  color: #f1f5f8;
+  width: 40px;
+  height: 40px;
+}
+
+.products{
+  padding: 4rem 0;
+}
+
+.products-center{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit ,minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+
+.img-container{
+  position:relative;
+  overflow: hidden;
+}
+
+.bag-btn{
+  position: absolute;
+  top: 70%;
+  right: 0;
+  background:#fc9b6d;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  transition: all 0.3s linear;
+  transform: translateX(101%);
+  cursor: pointer;
+}
+
+.bag-btn:hover{
+  color: #fff;
+}
+
+.fa-shopping-cart{
+  margin-right: 0.5rem;
+}
+
+.img-container:hover .bag-btn{
+transform: translateX(0);
+}
+
+.product-img{
+
+  display:block;
+  width:100%;
+  min-height: 12rem;
+  transition:all 0.3s linear;
+}
+
+.img-container:hover .product-img{
+  opacity: .8;
+}
+.product h3{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.product h3,p{
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+
+.product h4{
+  margin-top: 0.7rem;
+  letter-spacing:0.1rem;
+  text-align: center;
+}
