@@ -87,24 +87,29 @@ h2 {
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
-  grid-template-columns: repeat(auto-fit ,minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit ,minmax(260px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 1rem;
 }
 
 .img-container{
   position:relative;
+  margin: 15px;
   overflow: hidden;
+  height: 550px;
+  width: 200px;
+  grid-auto-rows: 2rem;  
 }
 
-.img-container img{
+.card-img-top{
   height:300px;
+  width: 300px;
 }
 
 
 .bag-btn{
   position: absolute;
-  top: 55%;
+  top: 47%;
   right: 0;
   background:#fc9b6d;
   border: none;
@@ -113,9 +118,9 @@ h2 {
   letter-spacing: .1rem;
   font-weight: bold;
   transition: all 0.3s linear;
-  transform: translateX(101%);
+  transform: translateX(80%);
   cursor: pointer;
-  opacity: .6;
+  opacity: .7;
 }
 
 .bag-btn:hover{
@@ -141,23 +146,27 @@ transform: translateX(0);
 .img-container:hover .product-img{
   opacity: .8;
 }
-.product h3{
+.products h3{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
 }
 
 .card-body h3, p{
   text-transform: capitalize;
-  font-size: 1rem;
-  margin-top: 0.5rem;
+  font-size: .9rem;
+  margin-top: 0.2rem;
   letter-spacing: .1rem;
   text-align: center;
+
 }
 
-.card-body h4{
-  margin-top: 0.7rem;
+.products h4{
+  margin-top: 0.1rem;
   letter-spacing:0.1rem;
-  text-align: center;
+  text-align:center;
   color: red;
+  font-weight: bold;
+  
 }
 
 
