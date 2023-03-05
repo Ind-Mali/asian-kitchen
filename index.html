@@ -1,132 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Asian Kitchen</title>
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zilla+Slab&display=swap" rel="stylesheet" />
-  <!-- Boostrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/f11e5a62cb.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-  <div class="menu">
-    <!-- filter buttons-->
-    <div class="btn-container">
-      <button class="btn btn-outline-dark btn-item" data-id="all">All</button>
-      <button class="btn btn-outline-dark btn-item" data-id="korea">Korea</button>
-      <button class="btn btn-outline-dark btn-item" data-id="japan">Japan</button>
-      <button class="btn btn-outline-dark btn-item" data-id="china">China</button>
-      <button class="btn btn-outline-dark btn-item cart-item-purchase" data-id="purchase"><svg
-          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-handbag"
-          viewBox="0 0 16 16">
-          <path
-            d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z" />
-        </svg>0</button>
-    </div>
-
-    <!-- title -->
-    <div class="title">
-      <h2>Asian Kitchen's Menu</h2>
-    </div>
-
-  </div>
-
-  <!-- menu items -->
-  <section class="products" style="w">
-    <div class="products-center">
-      <!-- single Product -->
-      <article class="product">
-        <div class="img-container">
-          <img
-            src="https://twoplaidaprons.com/wp-content/uploads/2020/09/tteokbokki-top-down-view-of-tteokbokki-in-a-bowl-500x500.jpg"
-            alt="product" class="product-img">
-          <button class="bag-btn" data-id="1">
-            <i class="fas fa-shopping-cart">
-              add to bag
-            </i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asian Kitchen</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zilla+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boostrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/f11e5a62cb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="menu">
+        <!-- title -->
+        <div class="title">
+          <h2>Asian Kitchen's Menu</h2>
+        </div>
+        <!-- filter buttons-->
+        <div class="btn-container">
+          <button class="btn btn-outline-dark btn-item" data-id="All">All</button>
+          <button class="btn btn-outline-dark btn-item" data-id="Korea">Korea</button>
+          <button class="btn btn-outline-dark btn-item" data-id="Japan">Japan</button>
+          <button class="btn btn-outline-dark btn-item" data-id="China">China</button>
+          <button class="btn btn-outline-dark btn-item cart-item-purchase" data-id="Purchase">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <div class="cart-items">
+              0
+            </div>
           </button>
         </div>
-        <h3>Tteokbokki</h3>
-        <p>Spicy rice cakes, serving with fish cake.</p>
-        <h4>10.99 ₺</h4>
-      </article>
-      <!-- single Product end -->
-    </div>
-  </section>
-  <section class="products">
-    <div class="products-center">
-      <!-- single Product -->
-      <article class="product">
-        <div class="img-container">
-          <img
-            src="https://twoplaidaprons.com/wp-content/uploads/2020/09/tteokbokki-top-down-view-of-tteokbokki-in-a-bowl-500x500.jpg"
-            alt="product" class="product-img">
-          <button class="bag-btn" data-id="1">
-            <i class="fas fa-shopping-cart">
-              add to bag
-            </i>
-          </button>
-        </div>
-        <h3>Tteokbokki</h3>
-        <p>Spicy rice cakes, serving with fish cake.</p>
-        <h4>10.99 ₺</h4>
-      </article>
-      <!-- single Product end -->
-    </div>
-  </section>
-  <section class="products">
-    <div class="products-center">
-      <!-- single Product -->
-      <article class="product">
-        <div class="img-container">
-          <img
-            src="https://twoplaidaprons.com/wp-content/uploads/2020/09/tteokbokki-top-down-view-of-tteokbokki-in-a-bowl-500x500.jpg"
-            alt="product" class="product-img">
-          <button class="bag-btn" data-id="1">
-            <i class="fas fa-shopping-cart">
-              add to bag
-            </i>
-          </button>
-        </div>
-        <h3>Tteokbokki</h3>
-        <p>Spicy rice cakes, serving with fish cake.</p>
-        <h4>10.99 ₺</h4>
-      </article>
-      <!-- single Product end -->
-    </div>
-  </section>
-  <section class="products">
-    <div class="products-center">
-      <!-- single Product -->
-      <article class="product">
-        <div class="img-container">
-          <img
-            src="https://twoplaidaprons.com/wp-content/uploads/2020/09/tteokbokki-top-down-view-of-tteokbokki-in-a-bowl-500x500.jpg"
-            alt="product" class="product-img">
-          <button class="bag-btn" data-id="1">
-            <i class="fas fa-shopping-cart">
-              add to bag
-            </i>
-          </button>
-        </div>
-        <h3>Tteokbokki</h3>
-        <p>Spicy rice cakes, serving with fish cake.</p>
-        <h4>10.99 ₺</h4>
-      </article>
-      <!-- single Product end -->
-    </div>
-  </section>
-  <!-- end of single item -->
+        <!-- menu items -->
+        <div class="section-center row products-center">
+          <!-- single-item -->
 
+          <div class="products">
+            <div class="card img-container" style="width: 18rem;">
+              <img src="https://twoplaidaprons.com/wp-content/uploads/2020/09/tteokbokki-top-down-view-of-tteokbokki-in-a-bowl-500x500.jpg" class="card-img-top" alt="...">
+              <button class="bag-btn" data-id="Bag-ID"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+              </svg> add to cart </button>
+              <div class="card-body">
+                <h3 class="card-title">Tteokbokki</h3>
+                <p class="card-text">Spicy rice cakes, serving with fish cake.</p>
+                <h4>10.99 ₺</h4>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+        </div>
+      </section>
+    </div>
 
-</body>
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>Your Cart</h2>
+        <div class="cart-content">
+          <!-- cart item -->
+          <div class="cart-item">
+          <img src="https://twoplaidaprons.com/wp-content/uploads/2020/09/tteokbokki-top-down-view-of-tteokbokki-in-a-bowl-500x500.jpg" alt="product">            
+          <div>
+            <h4>Tteokbokki</h4>
+            <h5>10.99 ₺</h5>
+            <span class="remove-item">
+              remove
+            </span>
+          </div>
+          <div>
+            <i class="fas fa-chevron-up"></i>
+            <p class="item-amount">1</p>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+          <!-- cart item end -->
+        </div>
+        <div class="cart-footer">
+          <h3>Your total : <span class="cart-total"></span> 0 ₺</h3>
+          <button class="clear-cart banner-btn">clear cart</button>
 
+        </div>
+
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
